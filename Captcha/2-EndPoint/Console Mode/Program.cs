@@ -49,6 +49,7 @@ namespace Captcha
                     break;
             }
             
+
             #endregion
 
             Console.ReadKey();
