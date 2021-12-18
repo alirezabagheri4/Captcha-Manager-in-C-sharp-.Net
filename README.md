@@ -1,9 +1,9 @@
 # Captcha-Manager-in-C-sharp-.Net
 ---------------------------------
-Make a captcha at random 
+1-Make a captcha code at random 
 
-Captcha confirmation 
+2-Captcha confirmation 
 
-Captcha drawing 
+3-Captcha drawing 
 
 
