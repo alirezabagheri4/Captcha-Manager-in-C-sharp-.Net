@@ -1,5 +1,6 @@
 ﻿using System;
-namespace Captcha
+
+namespace Captcha._0_Model
 {
     public class GenerateCaptchaResponse
     {

@@ -1,5 +1,8 @@
 ﻿using System;
-namespace Captcha
+using Captcha._0_Model;
+using Captcha._1_Management;
+
+namespace Captcha._2_EndPoint.Console_Mode
 {
     class Program
     {
@@ -24,13 +27,13 @@ namespace Captcha
             #region Test Verify Captcha
 
             Console.WriteLine("please inter the security code(Captcha Code)");
-            string inputCaptcha = Console.ReadLine();
+            var inputCaptcha = Console.ReadLine();
 
             var verifyCaptchaRequest = new VerifyCaptchaRequest() { Captcha = captcha, LoginCaptcha = inputCaptcha };
 
             var verifyCaptchaResponse = captchaManager.VerifyCaptcha(verifyCaptchaRequest);
 
-            switch (verifyCaptchaResponse.Result.ActionResult)
+            switch (verifyCaptchaResponse.ActionResult)
             {
                 case eVerifyCaptchaResponse.Matched:
                     Console.WriteLine("Matched");
@@ -48,7 +51,6 @@ namespace Captcha
                     Console.WriteLine("TryAgain");
                     break;
             }
-            
             #endregion
 
             Console.ReadKey();

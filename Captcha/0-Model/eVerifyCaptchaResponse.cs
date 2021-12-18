@@ -1,4 +1,4 @@
-﻿namespace Captcha
+﻿namespace Captcha._0_Model
 {
     public enum eVerifyCaptchaResponse
     {

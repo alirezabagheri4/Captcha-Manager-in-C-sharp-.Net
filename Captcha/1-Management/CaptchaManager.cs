@@ -3,8 +3,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.IO;
-using System.Threading.Tasks;
-namespace Captcha
+using Captcha._0_Model;
+
+namespace Captcha._1_Management
 {
     public class CaptchaManager
     {
